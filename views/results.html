@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daily Smoke Test - {{title}}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/jquery.min.js" type="text/javascript"></script>
+    <link rel='stylesheet' href='/css/bootstrap.min.css'></link>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></link>
+    <link rel="stylesheet" href="stylesheets/style.css"></link>
+  </head>
+  <body>
+       {% for job in jobs %}
+      <h2 id='titleJob'> Job {{job.name}}</h2>     
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Browser_short_version:</td>
+              <td>{{job.browser_short_version}}</td>
+            </tr>
+            <tr>
+              <td>Video_url:</td>
+              <td>{{job.video_url}}</td>
+            </tr>
+            <tr>
+              <td>Creation_time:</td>
+              <td>{{dateConverter(job.creation_time)}}</td>
+            </tr>
+            <tr>
+              <td>Custom-data:</td>
+              <td>{{job.custom-data}}</td>
+            </tr>
+            <tr>
+              <td>Browser_version:</td>
+              <td>{{job.browser_version}}</td>
+            </tr>
+             <tr>
+              <td>Owner:</td>
+              <td>{{job.owner}}</td>
+            </tr>
+            <tr>
+              <td>Record_screenshots:</td>
+              <td>{{record_screenshots}}</td>
+            </tr>
+             <tr>
+              <td>Id:</td>
+              <td>{{job.id}}</td>
+            </tr>
+             <tr>
+              <td>Record_video:</td>
+              <td>{{job.record_video}}</td>
+            </tr>
+             <tr>
+              <td>Build:</td>
+              <td>{{job.build}}</td>
+            </tr>
+             <tr>
+              <td>Passed:</td>
+              <td>{{job.passed}}</td>
+            </tr>
+            <tr>
+              <td>Public:</td>
+              <td>{{job.public}}</td>
+            </tr>
+            <tr>
+              <td>End_time:</td>
+              <td>{{dateConverter(job.end_time)}}</td>
+            </tr>
+            <tr>
+              <td>Status:</td>
+              <td>{{job.status}}</td>
+            </tr>
+           <tr>
+              <td>Log_url:</td>
+              <td>{{job.log_url}}</td>
+            </tr>
+           <tr>
+              <td>Start_time:</td>
+              <td>{{job.start_time}}</td>
+            </tr>
+           <tr>
+              <td>Proxied:</td>
+              <td>{{job.proxied}}</td>
+            </tr>
+           <tr>
+              <td>Modification_time:</td>
+              <td>{{dateConverter(job.modification_time)}}</td>
+            </tr>
+            <tr>
+              <td>Tags:</td>
+              <td>{{job.tags}}</td>
+            </tr>
+             <tr>
+              <td>Name:</td>
+              <td>{{job.name}}</td>
+            </tr>
+             <tr>
+              <td>Commands_not_successful:</td>
+              <td>{{job.commands_not_successful}}</td>
+            </tr>
+             <tr>
+              <td>Consolidated_status:</td>
+              <td>{{job.consolidated_status}}</td>
+            </tr>
+             <tr>
+              <td>Assigned_tunnel_id:</td>
+              <td>{{job.assigned_tunnel_id}}</td>
+            </tr>
+             <tr>
+              <td>Error:</td>
+              <td>{{job.error}}</td>
+            </tr>
+             <tr>
+              <td>Os:</td>
+              <td>{{job.os}}</td>
+            </tr>
+             <tr>
+              <td>Breakpointed:</td>
+              <td>{{job.breakpointed}}</td>
+            </tr>
+             <tr>
+              <td>Browser:</td>
+              <td>{{job.browser}}</td>
+            </tr>
+  
+          </tbody>
+        </table>
+         {% endfor %}
+  </body>
+  </html>

@@ -1,0 +1,26 @@
+	{
+  "name": "NodejsStarterApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bootstrap": "^4.1.2",
+    "cfenv": "1.0.x",
+    "consolidate": "^0.14.5",
+    "cron": "^1.2.1",
+    "express": "4.13.x",
+    "jquery": "^3.2.1",
+    "nunjucks": "^3.0.0",
+    "saucelabs": "^1.4.0",
+    "selenium-webdriver": "3.0.0-beta-2",
+    "underscore": "^1.8.3", 
+    "lodash":"^4.17.5"
+  },
+  "repository": {},
+  "engines": {
+    "node": "4.x"
+  }
+}

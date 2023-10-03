@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+#loginBody{
+    background-color: rgb(197, 208, 214);
+    padding-top: 50px;
+}
+
+#login-title {
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    color: #88c3e3;
+}
+
+.loginLabels{
+    margin-left: 26%;
+    
+}
+
+.loginInput{
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+#login-button{
+    width: 50%;
+    margin-left: 25%;
+}
+
+#loginPanel {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    height: 350px;
+}
+
+#nav {
+    background-color: #4178BE;
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 1.3em;
+   
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#panel-home {
+    height: 400px;
+}
+
+.pHome {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+#newJobPanel {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 680px;
+}
+
+.jobLabels{
+   margin-left: 10%;
+    
+}
+
+.jobInput{
+    width: 50%;
+    margin-left: 10%;
+}
+
+#script{
+    width: 713px;
+    height: 337px;
+    margin-left: 10%;
+}
+
+#job-button{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+
